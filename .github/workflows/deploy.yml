@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "sudo apt install deno"
+        run: "npm install deno"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
