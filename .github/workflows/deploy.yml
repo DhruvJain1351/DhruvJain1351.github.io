@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "supo apt install demo"
+        run: "sudo apt install demo"
 
       - name: Build step
         run: "deno run main.ts"
