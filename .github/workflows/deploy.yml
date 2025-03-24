@@ -29,10 +29,10 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install"
+        run: "supo apt install demo"
 
       - name: Build step
-        run: "npm run build"
+        run: "deno run main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
@@ -40,5 +40,5 @@ jobs:
           project: "dhruvjain13-dhruvjain13-28"
           entrypoint: "main.ts"
           root: "."
-          include: .next, public
+          
           
