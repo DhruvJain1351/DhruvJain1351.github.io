@@ -29,16 +29,13 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install deno"
-
-      - name: Build step
-        run: "deno run main.ts"
+        run: "sudo apt install deno"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "dhruvjain13-dhruvjain13-28"
           entrypoint: "main.ts"
-          root: "."
+          root: ""
           
           
