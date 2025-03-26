@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Deno Chat App</title>
-    <link rel="stylesheet" href="public/style.css" />
-    <script defer type="module" src="public/app.js"></script>
+    <link rel="stylesheet" href="/public/style.css" />
+    <script defer type="module" src="/public/app.js"></script>
   </head>
 
   <body>
@@ -17,14 +17,11 @@
     <main>
       <div id="conversation"></div>
       <form id="form">
-        <input
-          type="text"
-          id="data"
-          placeholder="send message"
-          autocomplete="off"
-        />
+        <input type="text" id="data" placeholder="Send message" autocomplete="off" />
+        <input type="file" id="imageInput" accept="image/*" />
         <button type="submit" id="send">Send ᯓ✉︎</button>
       </form>
+      
     </main>
     <template id="user">
       <li></li>
@@ -33,6 +30,7 @@
       <div>
         <span></span>
         <p></p>
+        <img class="chat-image" style="max-width: 200px; display: none;" />
       </div>
     </template>
   </body>
