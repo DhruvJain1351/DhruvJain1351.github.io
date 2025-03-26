@@ -34,7 +34,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "dhruvjain13-dhruvjain13-28"
+          project: "chat-for-fun"
           entrypoint: "main.ts"
           root: ""
           
