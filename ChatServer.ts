@@ -38,6 +38,7 @@ export default class ChatServer {
       event: "send-message",
       username: username,
       message: data.message,
+      image: data.image || null
     });
   }
 
