@@ -97,3 +97,60 @@ button {
         }
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header {
+        height: auto;
+        padding: 1rem;
+    }
+
+    aside {
+        order: 1;
+        padding: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: #e4ffe9;
+    }
+
+    aside h2 {
+        display: none; /* hide 'Users online' label to save space */
+    }
+
+    aside ul {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    aside li {
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    main {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    #conversation {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+
+    form {
+        position: sticky;
+        bottom: 0;
+        background: #f0f0f0;
+        padding: 0.5rem 0;
+    }
+}
